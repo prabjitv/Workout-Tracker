@@ -1,0 +1,2 @@
+user can enter "workout plan"
+"workout plan" consists of exercises
