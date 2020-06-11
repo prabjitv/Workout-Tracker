@@ -14,10 +14,11 @@ require("./routes/apiroutes")(app);
 require("./routes/htmlroutes")(app);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 });
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`Now listening on port: ${PORT}`);
 });
 
