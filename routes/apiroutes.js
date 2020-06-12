@@ -8,6 +8,13 @@ module.exports = function (app) {
       });
   });
 
+  app.get("/api/workouts/range", (req, res) => {
+    db.Workoutplan.find({})
+      .then(data => {
+        res.json(data);
+      });
+  })
+
   app.post("/api/workouts", (req, res) => {
     db.Workoutplan.create(req.body)
       .then(data => {
