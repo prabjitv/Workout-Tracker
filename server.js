@@ -13,7 +13,7 @@ app.use(logger("dev"));
 require("./routes/apiroutes")(app);
 require("./routes/htmlroutes")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/heroku_0pwhbz14", {
   useNewUrlParser: true,
   useCreateIndex: true
 });
